@@ -326,7 +326,7 @@ void Adafruit_TFTLCD_8bit_STM32::drawPixel(int16_t x, int16_t y, uint16_t color)
 // previously been set to define the bounds.  Max 255 pixels at
 // a time (BMP examples read in small chunks due to limited RAM).
 /*****************************************************************************/
-void Adafruit_TFTLCD_8bit_STM32::pushColors(uint16_t *data, uint8_t len, boolean first)
+void Adafruit_TFTLCD_8bit_STM32::pushColors(uint16_t *data, uint8_t len, bool first)
 {
   uint16_t color;
   uint8_t  hi, lo;
@@ -426,7 +426,7 @@ uint8_t read8_(void)
 {
   RD_ACTIVE;
   delayMicroseconds(10);
-  uint8_t temp = ( (TFT_DATA->regs->IDR>>TFT_DATA_NIBBLE) & 0x00FF);
+  uint8_t temp = ( (TFT_DATA->IDR>>TFT_DATA_NIBBLE) & 0x00FF);
   delayMicroseconds(1);
   RD_IDLE;
   delayMicroseconds(1);

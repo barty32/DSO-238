@@ -1,3 +1,6 @@
+# DSO-238
+Another open source firmware for DSO-138 oscilloscope, based on DLO-138 firmware.
+
 # DLO-138
 An open source firmware for DSO-138 Oscilloscope. 
 ![Photo](https://github.com/ardyesp/DLO-138/blob/master/pics/pic4.png)
