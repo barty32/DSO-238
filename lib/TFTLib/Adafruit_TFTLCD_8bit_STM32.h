@@ -8,6 +8,7 @@
 
     #define PROGMEM
     #define pgm_read_byte(addr) (*(const unsigned char *)(addr))
+    #undef  pgm_read_word
     #define pgm_read_word(addr) (*(const unsigned short *)(addr))
 
 #if ARDUINO >= 100

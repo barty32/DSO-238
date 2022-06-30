@@ -1,5 +1,5 @@
 
-#include "DLO-138.h"
+#include "DSO-238.h"
 
 int16_t trigLevel = 0;
 
@@ -58,7 +58,7 @@ void initIO()	{
     //pwmWrite(VGEN, 700);
     analogWrite(VGEN, 8192);
 
-	//blinkLED();
+	blinkLED();
 	
 	// init scan timeout timer
 	initScanTimeout();

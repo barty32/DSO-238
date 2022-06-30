@@ -6,26 +6,13 @@
  * - increased number of steps to move x and y axis
  * - changed stats text color to white
  * - added trigger voltage level readout
+ * v2.0:
+ * - whole firmware rewrite
+ * - use DMA for sampling
 */
 
 
-//#include <Arduino.h>
-//#include "C:\Users\barty\AppData\Local\Arduino15\packages\stm32duino\hardware\STM32F1\2021.5.31\cores\maple\Arduino.h"
-//#include "C:\Users\barty\Desktop\stm32duino\hardware\cores\maple\Arduino.h"
-
-#include "DLO-138.h"
-
-//#include <EEPROM.h>
-
-//#include <Adafruit_GFX.h> 
-// needs to be Adafruit GFX Library v1.1.4, check/change your installed version
-// otherwise you will get a black screen or compiler errors
-
-//#include <Adafruit_TFTLCD_8bit_STM32.h>
-//#include "global.h"
-//#include "variables.h"
-
-
+#include "DSO-238.h"
 
 // global capture variables
 uint16_t ch1Capture[NUM_SAMPLES] = {0};
