@@ -36,7 +36,7 @@ void setup(){
     //load config
 
     //init display
-
+    initDisplay();
 
     startSampling();
 }
@@ -44,6 +44,7 @@ void setup(){
 
 void loop(){
     delay(100);
+    readInpSwitches();
 }
 
 

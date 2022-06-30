@@ -104,7 +104,7 @@ bool initADC(){
     hadc1.Instance = ADC1;
     HAL_ADC_DeInit(&hadc1);
     hadc1.Init.ScanConvMode = ADC_SCAN_DISABLE;
-    hadc1.Init.ContinuousConvMode = ENABLE;
+    hadc1.Init.ContinuousConvMode = DISABLE;
     hadc1.Init.DiscontinuousConvMode = DISABLE;
     hadc1.Init.ExternalTrigConv = ADC_SOFTWARE_START;
     hadc1.Init.DataAlign = ADC_DATAALIGN_RIGHT;
@@ -115,7 +115,7 @@ bool initADC(){
     //Configure Regular Channel
     sConfig.Channel = ADC_CHANNEL_0;
     sConfig.Rank = ADC_REGULAR_RANK_1;
-    sConfig.SamplingTime = ADC_SAMPLETIME_239CYCLES_5;
+    sConfig.SamplingTime = ADC_SAMPLETIME_1CYCLE_5;
     if(HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)    {
         return false;
     }

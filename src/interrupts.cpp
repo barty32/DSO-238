@@ -2,7 +2,7 @@
 
 HardwareTimer Timer5;
 
-static void btnInterruptHandler(uint32_t pin){
+static void btnInterruptHandler(Buttons pin){
     static uint32_t lastChange = 0;
     static bool prevState = HIGH;
     uint32_t current = millis();
